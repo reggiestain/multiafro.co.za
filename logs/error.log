@@ -1,0 +1,941 @@
+2018-11-12 13:27:17 Error: [Error] Call to a member function find() on boolean
+Request URL: /users
+Referer URL: http://localhost:8765/
+Client IP: 127.0.0.1
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->index()
+#1 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#2 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(122): Cake\Controller\Controller->invokeAction()
+#3 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-11-13 10:36:34 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/essentialmastering/src/Template/Users/dashboard.ctp, line 69]
+Request URL: /users/dashboard
+Referer URL: http://localhost:8765/
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/dashboard.ctp, line 69
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1008
+Cake\View\View::_render() - CORE/src/View/View.php, line 967
+Cake\View\View::render() - CORE/src/View/View.php, line 591
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 82
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2018-11-13 10:50:27 Error: [Error] Class 'AuthComponent' not found
+Request URL: /users/dashboard
+Referer URL: http://localhost:8765/
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(1008): include()
+#1 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(967): Cake\View\View->_evaluate('/var/www/essent...', Array)
+#2 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(1353): Cake\View\View->_render('/var/www/essent...', Array)
+#3 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(496): Cake\View\View->_renderElement('/var/www/essent...', Array, Array)
+#4 /var/www/essentialmastering/src/Template/Users/dashboard.ctp(29): Cake\View\View->element('mentor/sidebar')
+#5 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(1008): include('/var/www/essent...')
+#6 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(967): Cake\View\View->_evaluate('/var/www/essent...', Array)
+#7 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(591): Cake\View\View->_render('/var/www/essent...')
+#8 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Controller/Controller.php(617): Cake\View\View->render(NULL, NULL)
+#9 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(128): Cake\Controller\Controller->render()
+#10 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#11 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#15 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#17 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#18 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#21 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->run()
+#22 {main}
+
+
+2018-11-19 13:06:49 Error: [Error] Class 'Router' not found
+Request URL: /
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(1008): include()
+#1 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(967): Cake\View\View->_evaluate('/var/www/essent...', Array)
+#2 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(591): Cake\View\View->_render('/var/www/essent...')
+#3 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Controller/Controller.php(617): Cake\View\View->render(NULL, NULL)
+#4 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(128): Cake\Controller\Controller->render()
+#5 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#6 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-11-19 13:07:50 Warning: Headers already sent in /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Debugger.php:753
+2018-11-19 13:07:50 Error: [RuntimeException] Unable to emit response; headers already sent
+Request URL: /users/login
+Referer URL: http://localhost:8765/
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(107): Zend\Diactoros\Response\SapiStreamEmitter->emit(Object(Zend\Diactoros\Response))
+#1 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->emit(Object(Zend\Diactoros\Response))
+#2 {main}
+
+
+2018-11-19 13:08:21 Warning: Headers already sent in /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Debugger.php:753
+2018-11-19 13:08:21 Error: [RuntimeException] Unable to emit response; headers already sent
+Request URL: /users/login
+Referer URL: http://localhost:8765/
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(107): Zend\Diactoros\Response\SapiStreamEmitter->emit(Object(Zend\Diactoros\Response))
+#1 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->emit(Object(Zend\Diactoros\Response))
+#2 {main}
+
+
+2018-11-19 13:08:33 Warning: Headers already sent in /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Debugger.php:753
+2018-11-19 13:08:33 Error: [RuntimeException] Unable to emit response; headers already sent
+Request URL: /users/login
+Referer URL: http://localhost:8765/
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(107): Zend\Diactoros\Response\SapiStreamEmitter->emit(Object(Zend\Diactoros\Response))
+#1 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->emit(Object(Zend\Diactoros\Response))
+#2 {main}
+
+
+2018-11-19 13:40:33 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/essentialmastering/src/Template/Users/dashboard.ctp, line 67]
+Request URL: /users/dashboard
+Referer URL: http://localhost:8765/
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/dashboard.ctp, line 67
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1008
+Cake\View\View::_render() - CORE/src/View/View.php, line 967
+Cake\View\View::render() - CORE/src/View/View.php, line 591
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 82
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2018-11-19 13:41:53 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/essentialmastering/src/Template/Users/dashboard.ctp, line 68]
+Request URL: /users/dashboard
+Referer URL: http://localhost:8765/
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/dashboard.ctp, line 68
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1008
+Cake\View\View::_render() - CORE/src/View/View.php, line 967
+Cake\View\View::render() - CORE/src/View/View.php, line 591
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 82
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2018-11-19 13:42:28 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/essentialmastering/src/Template/Users/dashboard.ctp, line 68]
+Request URL: /users/dashboard
+Referer URL: http://localhost:8765/
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/dashboard.ctp, line 68
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1008
+Cake\View\View::_render() - CORE/src/View/View.php, line 967
+Cake\View\View::render() - CORE/src/View/View.php, line 591
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 82
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2018-11-19 13:52:59 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/essentialmastering/src/Template/Users/dashboard.ctp, line 68]
+Request URL: /users/dashboard
+Referer URL: http://localhost:8765/
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/dashboard.ctp, line 68
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1008
+Cake\View\View::_render() - CORE/src/View/View.php, line 967
+Cake\View\View::render() - CORE/src/View/View.php, line 591
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 82
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2018-11-19 13:56:32 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/essentialmastering/src/Template/Users/dashboard.ctp, line 68]
+Request URL: /users/dashboard
+Referer URL: http://localhost:8765/
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/dashboard.ctp, line 68
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1008
+Cake\View\View::_render() - CORE/src/View/View.php, line 967
+Cake\View\View::render() - CORE/src/View/View.php, line 591
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 82
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2018-11-19 13:56:55 Error: [ParseError] syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file
+Request URL: /users/dashboard
+Referer URL: http://localhost:8765/
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(967): Cake\View\View->_evaluate('/var/www/essent...', Array)
+#1 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(591): Cake\View\View->_render('/var/www/essent...')
+#2 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Controller/Controller.php(617): Cake\View\View->render(NULL, NULL)
+#3 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(128): Cake\Controller\Controller->render()
+#4 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#5 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#7 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#8 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#9 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#10 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#11 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->run()
+#16 {main}
+
+
+2018-11-22 11:01:46 Warning: Warning (2): Missing argument 1 for App\Controller\UsersController::pricing() in [/var/www/essentialmastering/src/Controller/UsersController.php, line 129]
+Request URL: /users/pricing
+Referer URL: http://localhost:8765/users/dashboard
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+App\Controller\UsersController::pricing() - APP/Controller/UsersController.php, line 129
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 435
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 122
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 82
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2018-11-22 11:01:46 Error: [Error] Call to undefined function App\Controller\in_range()
+Request URL: /users/pricing
+Referer URL: http://localhost:8765/users/dashboard
+Client IP: 127.0.0.1
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->pricing()
+#1 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#2 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(122): Cake\Controller\Controller->invokeAction()
+#3 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-11-22 11:02:23 Warning: Warning (2): Missing argument 1 for App\Controller\UsersController::pricing() in [/var/www/essentialmastering/src/Controller/UsersController.php, line 129]
+Request URL: /users/pricing
+Referer URL: http://localhost:8765/users/dashboard
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+App\Controller\UsersController::pricing() - APP/Controller/UsersController.php, line 129
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 435
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 122
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 82
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2018-11-22 11:02:23 Error: [Error] Call to undefined function App\Controller\in_range()
+Request URL: /users/pricing
+Referer URL: http://localhost:8765/users/dashboard
+Client IP: 127.0.0.1
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->pricing()
+#1 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#2 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(122): Cake\Controller\Controller->invokeAction()
+#3 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-11-22 11:03:03 Warning: Warning (2): Missing argument 1 for App\Controller\UsersController::pricing() in [/var/www/essentialmastering/src/Controller/UsersController.php, line 129]
+Request URL: /users/pricing
+Referer URL: http://localhost:8765/users/dashboard
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+App\Controller\UsersController::pricing() - APP/Controller/UsersController.php, line 129
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 435
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 122
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 82
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2018-11-22 11:03:03 Error: [Error] Call to undefined function App\Controller\in_range()
+Request URL: /users/pricing
+Referer URL: http://localhost:8765/users/dashboard
+Client IP: 127.0.0.1
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->pricing()
+#1 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#2 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(122): Cake\Controller\Controller->invokeAction()
+#3 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-11-22 11:04:08 Error: [Error] Call to undefined function App\Controller\in_range()
+Request URL: /users/pricing/7
+Referer URL: http://localhost:8765/users/dashboard
+Client IP: 127.0.0.1
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->pricing('7')
+#1 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#2 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(122): Cake\Controller\Controller->invokeAction()
+#3 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-11-22 11:05:48 Error: [Error] Call to undefined function App\Controller\in_range()
+Request URL: /users/pricing/7
+Client IP: 127.0.0.1
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->pricing('7')
+#1 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#2 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(122): Cake\Controller\Controller->invokeAction()
+#3 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-11-22 11:07:46 Error: [Error] Call to undefined function App\Controller\in_range()
+Request URL: /users/pricing/1
+Client IP: 127.0.0.1
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->pricing('1')
+#1 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#2 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(122): Cake\Controller\Controller->invokeAction()
+#3 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-11-22 11:30:25 Warning: Headers already sent in /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Debugger.php:753
+2018-11-22 11:30:25 Error: [RuntimeException] Unable to emit response; headers already sent
+Request URL: /users/pricing/1
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(107): Zend\Diactoros\Response\SapiStreamEmitter->emit(Object(Zend\Diactoros\Response))
+#1 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->emit(Object(Zend\Diactoros\Response))
+#2 {main}
+
+
+2018-11-23 16:08:23 Error: [ParseError] syntax error, unexpected '\' (T_NS_SEPARATOR), expecting '{'
+Request URL: /users/inex
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/essentialmastering/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/var/www/essent...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Core/App.php(152): class_exists('App\\Controller\\...')
+#4 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Use...', 'App')
+#5 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(70): Cake\Core\App::className('Users', 'Controller', 'Controller')
+#6 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#9 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#10 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#11 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#15 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-11-24 10:12:32 Warning: Warning (2): Missing argument 1 for App\Controller\UsersController::pricing() in [/var/www/essentialmastering/src/Controller/UsersController.php, line 133]
+Request URL: /users/pricing/
+Referer URL: http://d743d8cd.ngrok.io/users/dashboard
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+App\Controller\UsersController::pricing() - APP/Controller/UsersController.php, line 133
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 435
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 122
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 82
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2018-11-24 10:12:32 Warning: Headers already sent in /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Debugger.php:753
+2018-11-24 10:12:32 Error: [RuntimeException] Unable to emit response; headers already sent
+Request URL: /users/pricing/
+Referer URL: http://d743d8cd.ngrok.io/users/dashboard
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(107): Zend\Diactoros\Response\SapiStreamEmitter->emit(Object(Zend\Diactoros\Response))
+#1 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->emit(Object(Zend\Diactoros\Response))
+#2 {main}
+
+
+2018-11-25 00:22:18 Error: [TypeError] Argument 2 passed to Cake\Routing\RouteBuilder::connect() must be of the type array, string given, called in /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php on line 206
+Stack Trace:
+#0 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(206): Cake\Routing\RouteBuilder->connect('/pay', 'https://sandbox...', Array)
+#1 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(671): Cake\Routing\Router::Cake\Routing\{closure}(Object(Cake\Routing\RouteBuilder))
+#2 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(905): Cake\Routing\RouteBuilder->scope('/', Array, Object(Closure))
+#3 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(207): Cake\Routing\Router::scope('/', Object(Closure))
+#4 /var/www/essentialmastering/config/routes.php(58): Cake\Routing\Router::connect('/pay', 'https://sandbox...')
+#5 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(671): Cake\Routing\Router::{closure}(Object(Cake\Routing\RouteBuilder))
+#6 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(905): Cake\Routing\RouteBuilder->scope('/', Array, Object(Closure))
+#7 /var/www/essentialmastering/config/routes.php(77): Cake\Routing\Router::scope('/', Object(Closure))
+#8 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(996): include('/var/www/essent...')
+#9 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(343): Cake\Routing\Router::_loadRoutes()
+#10 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(42): Cake\Routing\Router::parse('/users/cancel', 'GET')
+#11 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#16 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#18 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-11-25 00:22:23 Error: [TypeError] Argument 2 passed to Cake\Routing\RouteBuilder::connect() must be of the type array, string given, called in /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php on line 206
+Stack Trace:
+#0 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(206): Cake\Routing\RouteBuilder->connect('/pay', 'https://sandbox...', Array)
+#1 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(671): Cake\Routing\Router::Cake\Routing\{closure}(Object(Cake\Routing\RouteBuilder))
+#2 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(905): Cake\Routing\RouteBuilder->scope('/', Array, Object(Closure))
+#3 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(207): Cake\Routing\Router::scope('/', Object(Closure))
+#4 /var/www/essentialmastering/config/routes.php(58): Cake\Routing\Router::connect('/pay', 'https://sandbox...')
+#5 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(671): Cake\Routing\Router::{closure}(Object(Cake\Routing\RouteBuilder))
+#6 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(905): Cake\Routing\RouteBuilder->scope('/', Array, Object(Closure))
+#7 /var/www/essentialmastering/config/routes.php(77): Cake\Routing\Router::scope('/', Object(Closure))
+#8 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(996): include('/var/www/essent...')
+#9 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(343): Cake\Routing\Router::_loadRoutes()
+#10 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(42): Cake\Routing\Router::parse('/users/dashboar...', 'GET')
+#11 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#16 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#18 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-11-25 00:22:24 Error: [TypeError] Argument 2 passed to Cake\Routing\RouteBuilder::connect() must be of the type array, string given, called in /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php on line 206
+Stack Trace:
+#0 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(206): Cake\Routing\RouteBuilder->connect('/pay', 'https://sandbox...', Array)
+#1 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(671): Cake\Routing\Router::Cake\Routing\{closure}(Object(Cake\Routing\RouteBuilder))
+#2 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(905): Cake\Routing\RouteBuilder->scope('/', Array, Object(Closure))
+#3 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(207): Cake\Routing\Router::scope('/', Object(Closure))
+#4 /var/www/essentialmastering/config/routes.php(58): Cake\Routing\Router::connect('/pay', 'https://sandbox...')
+#5 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(671): Cake\Routing\Router::{closure}(Object(Cake\Routing\RouteBuilder))
+#6 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(905): Cake\Routing\RouteBuilder->scope('/', Array, Object(Closure))
+#7 /var/www/essentialmastering/config/routes.php(77): Cake\Routing\Router::scope('/', Object(Closure))
+#8 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(996): include('/var/www/essent...')
+#9 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(343): Cake\Routing\Router::_loadRoutes()
+#10 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(42): Cake\Routing\Router::parse('/users/dashboar...', 'GET')
+#11 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#16 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#18 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-11-25 00:22:31 Error: [TypeError] Argument 2 passed to Cake\Routing\RouteBuilder::connect() must be of the type array, string given, called in /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php on line 206
+Stack Trace:
+#0 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(206): Cake\Routing\RouteBuilder->connect('/pay', 'https://sandbox...', Array)
+#1 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(671): Cake\Routing\Router::Cake\Routing\{closure}(Object(Cake\Routing\RouteBuilder))
+#2 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(905): Cake\Routing\RouteBuilder->scope('/', Array, Object(Closure))
+#3 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(207): Cake\Routing\Router::scope('/', Object(Closure))
+#4 /var/www/essentialmastering/config/routes.php(58): Cake\Routing\Router::connect('/pay', 'https://sandbox...')
+#5 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(671): Cake\Routing\Router::{closure}(Object(Cake\Routing\RouteBuilder))
+#6 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(905): Cake\Routing\RouteBuilder->scope('/', Array, Object(Closure))
+#7 /var/www/essentialmastering/config/routes.php(77): Cake\Routing\Router::scope('/', Object(Closure))
+#8 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(996): include('/var/www/essent...')
+#9 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Router.php(343): Cake\Routing\Router::_loadRoutes()
+#10 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(42): Cake\Routing\Router::parse('/', 'GET')
+#11 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#16 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#18 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-11-26 21:37:22 Error: [Error] Class 'Router' not found
+Request URL: /
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(1008): include()
+#1 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(967): Cake\View\View->_evaluate('/var/www/essent...', Array)
+#2 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(591): Cake\View\View->_render('/var/www/essent...')
+#3 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Controller/Controller.php(617): Cake\View\View->render(NULL, NULL)
+#4 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(128): Cake\Controller\Controller->render()
+#5 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#6 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-11-26 21:37:49 Error: [Error] Class 'Router' not found
+Request URL: /
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(1008): include()
+#1 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(967): Cake\View\View->_evaluate('/var/www/essent...', Array)
+#2 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(591): Cake\View\View->_render('/var/www/essent...')
+#3 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Controller/Controller.php(617): Cake\View\View->render(NULL, NULL)
+#4 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(128): Cake\Controller\Controller->render()
+#5 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#6 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-11-26 21:37:51 Error: [Error] Class 'Router' not found
+Request URL: /
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(1008): include()
+#1 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(967): Cake\View\View->_evaluate('/var/www/essent...', Array)
+#2 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(591): Cake\View\View->_render('/var/www/essent...')
+#3 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Controller/Controller.php(617): Cake\View\View->render(NULL, NULL)
+#4 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(128): Cake\Controller\Controller->render()
+#5 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#6 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-11-26 21:37:53 Error: [Error] Class 'Router' not found
+Request URL: /
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(1008): include()
+#1 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(967): Cake\View\View->_evaluate('/var/www/essent...', Array)
+#2 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(591): Cake\View\View->_render('/var/www/essent...')
+#3 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Controller/Controller.php(617): Cake\View\View->render(NULL, NULL)
+#4 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(128): Cake\Controller\Controller->render()
+#5 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#6 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-11-27 15:57:55 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+Request URL: /users/dashboard
+Referer URL: http://8a827893.ngrok.io/
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(967): Cake\View\View->_evaluate('/var/www/essent...', Array)
+#1 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(1353): Cake\View\View->_render('/var/www/essent...', Array)
+#2 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(496): Cake\View\View->_renderElement('/var/www/essent...', Array, Array)
+#3 /var/www/essentialmastering/src/Template/Users/dashboard.ctp(178): Cake\View\View->element('mentor/sidebar')
+#4 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(1008): include('/var/www/essent...')
+#5 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(967): Cake\View\View->_evaluate('/var/www/essent...', Array)
+#6 /var/www/essentialmastering/vendor/cakephp/cakephp/src/View/View.php(591): Cake\View\View->_render('/var/www/essent...')
+#7 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Controller/Controller.php(617): Cake\View\View->render(NULL, NULL)
+#8 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(128): Cake\Controller\Controller->render()
+#9 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#10 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#16 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#18 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#19 /var/www/essentialmastering/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 /var/www/essentialmastering/webroot/index.php(37): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-11-28 14:17:07 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/View/View.php(967): Cake\View\View->_evaluate('/var/www/multia...', Array)
+#1 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/View/View.php(638): Cake\View\View->_render('/var/www/multia...')
+#2 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/View/View.php(596): Cake\View\View->renderLayout('', 'default')
+#3 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Controller/Controller.php(617): Cake\View\View->render(NULL, NULL)
+#4 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(128): Cake\Controller\Controller->render()
+#5 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#6 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 /var/www/multiafro-holdings/webroot/index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-11-28 14:19:04 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/View/View.php(967): Cake\View\View->_evaluate('/var/www/multia...', Array)
+#1 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/View/View.php(638): Cake\View\View->_render('/var/www/multia...')
+#2 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/View/View.php(596): Cake\View\View->renderLayout('', 'default')
+#3 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Controller/Controller.php(617): Cake\View\View->render(NULL, NULL)
+#4 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(128): Cake\Controller\Controller->render()
+#5 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#6 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 /var/www/multiafro-holdings/webroot/index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-11-28 14:19:19 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/View/View.php(967): Cake\View\View->_evaluate('/var/www/multia...', Array)
+#1 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/View/View.php(638): Cake\View\View->_render('/var/www/multia...')
+#2 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/View/View.php(596): Cake\View\View->renderLayout('', 'default')
+#3 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Controller/Controller.php(617): Cake\View\View->render(NULL, NULL)
+#4 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(128): Cake\Controller\Controller->render()
+#5 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#6 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 /var/www/multiafro-holdings/webroot/index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-11-28 14:19:33 Error: [ParseError] syntax error, unexpected ','
+Request URL: /
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/View/View.php(967): Cake\View\View->_evaluate('/var/www/multia...', Array)
+#1 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/View/View.php(638): Cake\View\View->_render('/var/www/multia...')
+#2 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/View/View.php(596): Cake\View\View->renderLayout('', 'default')
+#3 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Controller/Controller.php(617): Cake\View\View->render(NULL, NULL)
+#4 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(128): Cake\Controller\Controller->render()
+#5 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#6 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 /var/www/multiafro-holdings/webroot/index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-11-28 14:24:01 Error: [Error] Call to undefined method App\View\AppView::script()
+Request URL: /
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/View/View.php(1008): include()
+#1 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/View/View.php(967): Cake\View\View->_evaluate('/var/www/multia...', Array)
+#2 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/View/View.php(638): Cake\View\View->_render('/var/www/multia...')
+#3 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/View/View.php(596): Cake\View\View->renderLayout('', 'default')
+#4 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Controller/Controller.php(617): Cake\View\View->render(NULL, NULL)
+#5 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(128): Cake\Controller\Controller->render()
+#6 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#7 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#9 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#10 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#11 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#15 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 /var/www/multiafro-holdings/webroot/index.php(37): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-11-28 14:24:16 Error: [Error] Call to undefined method App\View\AppView::script()
+Request URL: /
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/View/View.php(1008): include()
+#1 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/View/View.php(967): Cake\View\View->_evaluate('/var/www/multia...', Array)
+#2 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/View/View.php(638): Cake\View\View->_render('/var/www/multia...')
+#3 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/View/View.php(596): Cake\View\View->renderLayout('', 'default')
+#4 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Controller/Controller.php(617): Cake\View\View->render(NULL, NULL)
+#5 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(128): Cake\Controller\Controller->render()
+#6 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#7 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#9 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#10 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#11 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#15 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 /var/www/multiafro-holdings/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 /var/www/multiafro-holdings/webroot/index.php(37): Cake\Http\Server->run()
+#18 {main}
+
+
